@@ -70,52 +70,48 @@
 
 ### JavaScript
 > Framework
-* React
-  * Redux
-  * Mobx
-* Vue
-  * VueX
-* AngularJS
+* [React](https://zh-hans.reactjs.org/)
+  * [Redux](https://cn.redux.js.org/)
+  * [Mobx](https://mobx.js.org/README.html)
+* [Vue](https://cn.vuejs.org/index.html)
+  * [VueX](https://vuex.vuejs.org/zh/)
+* [AngularJS](https://angularjs.org/)
   * RxJS
   * NgR
 
 
-### Security
-* CSRF/XSS
-* ADsafe/Caja/FBJS/Sandbox
-* HTTPS(每个页面和所有外部内容都使用HTTPS)
-* HTTP严格传输安全性(HSTS):HTTP头设置'Strict-Transport-Security'
-* 跨站点请求伪造攻击(CSRF):确保向服务器端发送的请求是合法的，并来自您的网站/应用程序，以防止发生CSRF攻击。
-* 跨站点脚本攻击(XSS):确保页面或网站没有XSS攻击的可能性
-* Content Type Options: 防止Google Chrome 和 Internet Explorer 尝试将响应的内容类型从服务器声明的内容类型中嗅探出来
-* X-Frame-Options (XFO)（外部框架连接设定） 保护网站的访问者免受劫持攻击。
-* Content Security Policy（内容安全策略） 定义内容如何加载到您的网站上的方式以及允许加载的位置。也可以用来防止劫持攻击。
+### 安全
+* **HTTPS**
+  每个页面和所有外部内容(插件、图像...)都使用HTTPS。
+* **HTTP严格传输安全性(HSTS)**
+  HTTP头设置'Strict-Transport-Security'
+* **跨站点请求伪造攻击(CSRF)**
+  确保向服务器端发送的请求是合法的，并来自您的网站/应用程序，以防止发生CSRF攻击。
+* **跨站点脚本攻击(XSS)**
+  确保页面或网站没有XSS攻击的可能性
+* **Content Type Options**
+  防止Google Chrome 和 Internet Explorer 尝试将响应的内容类型从服务器声明的内容类型中嗅探出来
+* **X-Frame-Options (XFO)（外部框架连接设定）**
+  保护网站的访问者免受劫持攻击。
+* **Content Security Policy（内容安全策略）** 
+  定义内容如何加载到您的网站上的方式以及允许加载的位置。也可以用来防止劫持攻击。
 
 
-### Performance
-* Concatenation(合并)
-* Minification(压缩)
-* Non-blocking(非阻塞)
-* 未使用的CSS
-* WebPagetest
-* ShowSlow/YSlow/34Rule
-* PageSpeed
-* HttpWatch
-* DynaTrace's Ajax
-* mod_pagespeed
-* PerfBudget
-* CriticalCSS
-* Picturefill
+### 性能
 * 减少请求数量（sprite、combo）
 * 善用缓存（application cache、http缓存、CDN、localstorage、sessionstorage，备忘录模式）
 * 减少选择器消耗（从右到左），减少DOM操作（DOM和JavaScript解释器的分离）
 * CSS的回流与重绘
-
-* 页面大小: 控制每张网页的大小在0到500KB之间。
-* 文件压缩: 压缩你的HTML文件。
-* 懒加载: 图片、js脚本和CSS需要懒加载，以提高当前页面的响应时间（请参见各自部分的详细信息）。
-* Cookie大小: 如果使用Cookie，确保每个Cookie不超过4096个字节，并且域名下不超过20个Cookie。
-* 第三方组件: 在可能的情况下，用静态组件替代依赖于外部JS的第三方iframe或组件（如共享按钮），从而限制对外部API的调用，并将用户活动保持为私有。
+* **页面大小**
+  控制每张网页的大小在0到500KB之间。
+* **文件压缩**
+  压缩你的HTML文件。
+* **懒加载**
+  图片、js脚本和CSS需要懒加载，以提高当前页面的响应时间（请参见各自部分的详细信息）。
+* **Cookie大小**
+  如果使用Cookie，确保每个Cookie不超过4096个字节，并且域名下不超过20个Cookie。
+* **第三方组件**
+  在可能的情况下，用静态组件替代依赖于外部JS的第三方iframe或组件（如共享按钮），从而限制对外部API的调用，并将用户活动保持为私有。
 
 ### SEO
 * Google Analytics

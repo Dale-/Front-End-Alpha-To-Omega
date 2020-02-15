@@ -133,9 +133,76 @@
 
 > 存储层面
 
-##### 浏览器缓存
+### 浏览器缓存
+* 缓存位置
+  * Service Worker
+  * Memory Cache
+  * Disk Cache
+  * Push Cache
+* http缓存（强缓存 / 协商缓存）
+   HTTP 缓存是我们日常开发中最为熟悉的一种缓存机制。它又分为强缓存和协商缓存。优先级较高的是强缓存，在命中强缓存失败的情况下，才会走协商缓存。
+  * 强缓存
+    强缓存不会向服务器发送请求，直接从缓存中读取资源，在chrome控制台的Network选项中可以看到该请求返回200的状态码，并且Size显示from disk cache或from memory cache。强缓存可以通过设置两种 HTTP Header 实现：**Expires** 和 **Cache-Control**）。
+  * 协商缓存
+    协商缓存就是强制缓存失效后，浏览器携带缓存标识向服务器发起请求，由服务器根据缓存标识决定是否使用缓存的过程。   
+### 本地缓存
+##### Cookie
+  * cookie保存在浏览器端
+  * 单个cookie保存的数据不能超过4kb
+  * cookie只能保存字符串类型，以文本的方式
+  * 使用场景
+    * 判断用户是否登录过网站，以便下次登录时能够实现自动登录（或者记住密码）。
+    * 保存上次登录的事件等信息。
+    * 保存上次查看的页面
+    * 浏览计数
+  * 缺点
+    * 大小受限
+    * 用户可以操作（禁用）cookie，使功能受限
+    * 安全性较低
+    * 有些状态不可能保存在客户端
+    * 每次访问都要传送cookie给服务器，浪费宽带
+    * cookie数据有路径（path）的概念，可以限制cookie只属于某个路径下
+  
+##### localStorage & sessionStorage
+> 生命周期
 
-##### 本地缓存
+* localStorage的生命周期是永久的，关闭页面或浏览器之后localStorage中的数据也不会消失。
+* localStorage除非主动删除数据，否则数据永远不会消失。
+* sessionStorage的生命周期是仅在当前会话下有效。
+* sessionStorage引入了一个“浏览器窗口”的概念，sessionStorage是在同源的窗口中始终存在的数据。只要这个浏览器窗口没有关闭，即使刷新页面或者进入同源另一个页面，数据依然存在。但是sessionStorage在关闭了浏览器窗口后就会被销毁。同时独立的打开同一个窗口同一个页面，sessionStorage也是不一样的。
+
+> 存储大小
+
+localStorage和sessionStorage的存储数据大小一般都是：5MB
+
+> 存储位置
+
+localStorage和sessionStorage都保存在客户端，不与服务器进行交互通信
+
+> 存储内容类型
+
+localStorage和sessionStorage只能存储字符串类型，对于复杂的对象可以使用ECMAScript提供的JSON对象的stringify和parse来处理
+
+> 获取方式
+
+* localStorage：window.localStorage
+* sessionStorage：window.sessionStorage
+
+> 应用场景
+
+* localStorage：常用于长期登录（+判断用户是否已登录），适合长期保存在本地的数据
+* sessionStorage：敏感账号一次性登录
+
+> WebStorage的优点
+
+* 存储空间更大：cookie为4KB，而WebStorage是5MB
+* 节省网络流量：WebStorage不会传送到服务器，存储在本地的数据可以直接获取，也不会像cookie一样每次请求都会传送到服务器，所以减少了客户端和服务端的交互，节省了网络流量
+* 对于那种只需要在用户浏览一组页面期间保存而关闭浏览器后就可以丢弃的数据，sessionStorage会非常方便
+* 快速显示：有的数据存储在WebStorage上再加上浏览器本身的缓存。获取数据时可以从本地获取会比从服务器端获取快得多，所以速度更快
+* 安全性：WebStorage不会随着HTTP header发送到服务器端，所以安全性相对于cookie来说会比较高一些，不会担心截获，但是仍然存在伪造问题
+* WebStorage提供了一些方法，数据操作比cookie方便
+
+
 
 > 渲染层面
 

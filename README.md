@@ -202,6 +202,9 @@ localStorage和sessionStorage只能存储字符串类型，对于复杂的对象
 * 安全性：WebStorage不会随着HTTP header发送到服务器端，所以安全性相对于cookie来说会比较高一些，不会担心截获，但是仍然存在伪造问题
 * WebStorage提供了一些方法，数据操作比cookie方便
 
+##### IndexedDB
+* IndexedDB 是没有存储上限的（一般来说不会小于 250M）
+* IndexedDB 可以看做是 LocalStorage 的一个升级，当数据的复杂度和规模上升到了 LocalStorage 无法解决的程度，我们毫无疑问可以请出 IndexedDB 来帮忙。
 
 
 > 渲染层面

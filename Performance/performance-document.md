@@ -1,4 +1,4 @@
-### [性能优化](https://segmentfault.com/a/1190000019185648)
+### 性能优化
 > 网络层面
 
 ##### 减少请求次数
@@ -133,3 +133,9 @@ CDN 往往被用来存放静态资源
 
 ##### 首屏渲染提速
   * 懒加载
+
+
+
+> 参考
+* https://yuchengkai.cn/docs/frontend/performance.html
+* https://segmentfault.com/a/1190000019185648

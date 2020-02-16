@@ -41,18 +41,18 @@
 
 
 
-### 由此开始
+## 由此开始
 * [📖 互联网是如何工作的?](https://developer.mozilla.org/zh-CN/docs/learn/How_the_Internet_works) **|** [📹 视频](https://www.youtube.com/watch?v=7_LPdttKXPc)
 * Front End & Back End
 * [HTTP协议](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Overview)
 * [从输入URL到页面加载完成，发生了什么](https://segmentfault.com/a/1190000006879700)
 
-### HTML
+## HTML
 * DOM
 * Element
 * Attribute
 
-### CSS
+## CSS
 * Selector
 * Priority
 * Specificity
@@ -68,7 +68,7 @@
 * PostCSS
 * Less
 
-### JavaScript
+## JavaScript
 > Framework
 * [React](https://zh-hans.reactjs.org/)
   * [Redux](https://cn.redux.js.org/)
@@ -80,7 +80,7 @@
   * NgR
 
 
-### Security
+## Security
 * **HTTPS**
   每个页面和所有外部内容(插件、图像...)都使用HTTPS。
 * **HTTP严格传输安全性(HSTS)**
@@ -97,7 +97,7 @@
   定义内容如何加载到您的网站上的方式以及允许加载的位置。也可以用来防止劫持攻击。
 
 
-### Performance
+## Performance
 > 网络层面
 * 减少请求次数
 * 减少单次请求所花费的时间
@@ -128,7 +128,7 @@
 * 防抖
 
 
-### SEO
+## SEO
 * Google Analytics
 * Headings logic
 * sitemap.xml
@@ -137,7 +137,7 @@
 * Sitemap HTML
 * Pagination link tags
 
-### Tools
+## Tools
 > Package Managers
 * npm
 * yarn
@@ -163,7 +163,7 @@
 * Fiddler/WireShark/tcpdump
 
 
-### 工程化
+## 工程化
 
 > Code Quality
 * JSCS
@@ -179,7 +179,7 @@
 > 代码分析
 * Code climate
 
-### 测试
+## 测试
 > 单元测试
  * Jasmine
 * Mocha
@@ -192,7 +192,7 @@
 
 > 测试覆盖率
 
-### 小程序
+## 小程序
 * Taro
 * WePY
 * mpvue

@@ -1,23 +1,32 @@
-# Git版本控制
+<h1 align="center">
+<br>
+  <img src="/Git/images/git.png" alt="Git" width="400">
+  <br>
+    <br>
+  Git 版本控制
+  <br>
+</h1>
+
+> 如果你正在学习Git版本控制，可点击右上角`Star`此项目, 我会持续更新资源和链接。
 
 ## 🔺目录
-* [版本控制](#🔺什么是版本控制)
-* [什么是Git](#🔺 什么是Git)
-* [图解Git命令](#🔺 图解Git命令)
-* [Git的常用命令](#🔺 Git的常用命令)
-* [优雅的提交Commit](#🔺优雅的提交Commit)
-* [图形化客户端](#🔺图形化客户端)
-* [基于Git的代码托管平台](#🔺基于Git的代码托管平台)
-* [学习资源](#🔺学习资源)
+* [版本控制](#什么是版本控制)
+* [什么是Git](#什么是Git)
+* [图解命令](#图解命令)
+* [常用命令](#常用命令)
+* [优雅的提交记录](#优雅的提交记录)
+* [图形化客户端](#图形化客户端)
+* [代码托管平台](#代码托管平台)
+* [学习资源](#学习资源)
 
-## 🔺什么是版本控制
+## 🔺版本控制
 * 版本控制是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。一个比较易懂的说法，时光穿梭机。
 
 * 通俗的话来说比如我们写了一篇文章，不免会在这个文章上修改、更新、或者删除。可能关于一篇文章，我们在桌面上会有很多个文件名，我们会用后缀的方式记录变化。如果我们能将每一次的改变记录成为一个版本，而且可以高效的回到某个版本、清晰的看到每一次的变化，这样就不在需要多个文件名出现在一个文件夹里面，我们可以对变化有更清晰的认知，这就是版本控制的意义。
 
 * 比如我们可以用版本控制来推荐自己的写书进度、借助Git对Sketch进行文本管理、写文章/论文的版本更迭、对代码进行版本控制管理等。
 
-## 🔺 什么是Git
+## 🔺什么是Git
 Git 是一种分布式的版本管理系统，用于敏捷高效地处理任何或小或大的项目。Git 不仅仅是个版本控制系统，它也是个内容管理系统(CMS)，工作管理系统等。
 
 * 默认的行业标准
@@ -27,7 +36,7 @@ Git 是一种分布式的版本管理系统，用于敏捷高效地处理任何�
 * 安全
 
 
-## 🔺 图解Git命令
+## 🔺图解命令
 
 [图解原文](https://github.com/geeeeeeeeek/git-recipes/wiki/4.1-%E5%9B%BE%E8%A7%A3-Git-%E5%91%BD%E4%BB%A4)
 
@@ -168,7 +177,7 @@ Git 是一种分布式的版本管理系统，用于敏捷高效地处理任何�
 
 同样有 `git rebase --interactive` 让你更方便的完成一些复杂操作，比如丢弃、重排、修改、合并提交。
 
-## 🔺 Git的常用命令
+## 🔺常用命令
 
 [查看原文](https://github.com/521xueweihan/git-tips/blob/master/README.md)
 
@@ -454,7 +463,7 @@ git config --global alias.st status
 ```
 
 
-## 🔺优雅的提交Commit
+## 🔺优雅的提交记录
 #### commit结构
 * type: 必填，描述主要修改内容的类型
 * scope: 修改的范围
@@ -481,7 +490,7 @@ git config --global alias.st status
 * Sourcetree
 * GitHub Desktop
 
-## 🔺基于Git的代码托管平台
+## 🔺代码托管平台
 * GitHub
 GitHub 是第一个供“用Git进行版本控制系统的软件开发项目”使用的基于Web的代码托管服务，是目前全球最大的开源社交编程及代码托管网站。GitHub 于 2008 年 4 月 10 日正式上线，除了基本的服务以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。
 
@@ -496,8 +505,8 @@ Coding 是一个面向开发者的云端开发平台，目前提供代码托管�
 
 
 ## 🔺学习资源
- [GIT简明指南](https://www.runoob.com/manual/git-guide/) 
- [Learn Git Branching](https://learngitbranching.js.org/)
- [Git - Book](https://git-scm.com/book/zh/v2)
+* [GIT简明指南](https://www.runoob.com/manual/git-guide/) 
+* [Learn Git Branching](https://learngitbranching.js.org/)
+*  [Git - Book](https://git-scm.com/book/zh/v2)
 
 
